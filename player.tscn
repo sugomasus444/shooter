@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bgda7jwi7upn5"]
+
+[ext_resource type="Script" uid="uid://b4hdqqlc13dej" path="res://character_body_2d.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dkutf6stumdur" path="res://main character.png" id="2_onrkg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1vivr"]
+font_size = 48
+outline_size = 1
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(32, 65.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(40, 24)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=719861496]
+script = ExtResource("1_4flbx")
+
+[node name="player" type="Node2D" parent="." unique_id=1164164571]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1999625060]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1693795816]
+offset_left = 40.0
+offset_top = 536.0
+offset_right = 296.0
+offset_bottom = 616.0
+color = Color(1, 0, 0, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1779962210]
+offset_left = 8.0
+offset_top = 512.0
+offset_right = 328.0
+offset_bottom = 640.0
+text = "10/10"
+label_settings = SubResource("LabelSettings_1vivr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainCharacter2" type="Sprite2D" parent="." unique_id=1421890048]
+position = Vector2(-9.630251, -8.125)
+scale = Vector2(0.26645657, 0.26785713)
+texture = ExtResource("2_onrkg")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=523753149]
+zoom = Vector2(1.2, 1.2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=185984465]
+position = Vector2(-32, -7.375)
+shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=289771868]
+position = Vector2(4, -20)
+shape = SubResource("RectangleShape2D_1vivr")
