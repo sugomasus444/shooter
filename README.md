@@ -6,6 +6,7 @@ About zombie apocalypsis in someones basement
 Left - A 
 Right - D,
 Jump - spacebar
+Shoot - click
 # itch.io link: 
 https://erussus.itch.io/survive-in-harolds-basement
 # Team and credits: Teodors Kivlāns, harolds grāpis, Rodrigo Matusevičs.
